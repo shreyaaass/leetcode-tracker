@@ -1,0 +1,1846 @@
+{
+ "Selection Sort": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/selection-sort",
+  "via": "sheet"
+ },
+ "Bubble Sort": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/bubble-sort",
+  "via": "sheet"
+ },
+ "Insertion Sort": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/insertion-sorting",
+  "via": "reviewed"
+ },
+ "Merge Sort": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/merge-sorting",
+  "via": "sheet"
+ },
+ "Recursive Bubble Sort": {
+  "slug": null,
+  "via": "none"
+ },
+ "Recursive Insertion Sort": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Quick Sort": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/quick-sorting",
+  "via": "sheet"
+ },
+ "Largest Element in an Array": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Second Largest Element in an Array without sorting": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Check if the array is sorted": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Remove duplicates from Sorted array": {
+  "slug": "remove-duplicates-from-sorted-array",
+  "via": "sheet"
+ },
+ "Left Rotate an array by one place": {
+  "slug": null,
+  "via": "none"
+ },
+ "Left rotate an array by D places": {
+  "slug": "rotate-array",
+  "via": "reviewed"
+ },
+ "Move Zeros to end": {
+  "slug": "move-zeroes",
+  "via": "sheet"
+ },
+ "Linear Search": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/linear-search",
+  "via": "sheet"
+ },
+ "Find the Union": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Find missing number in an array": {
+  "slug": "missing-number",
+  "via": "reviewed"
+ },
+ "Maximum Consecutive Ones": {
+  "slug": "max-consecutive-ones",
+  "via": "sheet"
+ },
+ "Find the number that appears once, and other numbers twice": {
+  "slug": "single-number",
+  "via": "reviewed"
+ },
+ "Longest subarray with given sum K (positives)": {
+  "slug": null,
+  "via": "none"
+ },
+ "Longest subarray with sum K (Positives + Negatives)": {
+  "slug": null,
+  "via": "none"
+ },
+ "2Sum Problem": {
+  "slug": "two-sum",
+  "via": "reviewed"
+ },
+ "Sort an array of 0's 1's and 2's": {
+  "slug": "sort-colors",
+  "via": "sheet"
+ },
+ "Majority Element (>n/2 times)": {
+  "slug": "majority-element",
+  "via": "reviewed"
+ },
+ "Kadane's Algorithm, maximum subarray sum": {
+  "slug": "maximum-subarray",
+  "via": "reviewed"
+ },
+ "Subarray with maximum subarray sum (extended version)": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Stock Buy and Sell": {
+  "slug": "best-time-to-buy-and-sell-stock",
+  "via": "search",
+  "lcTitle": "Best Time to Buy and Sell Stock",
+  "score": 0.57
+ },
+ "Rearrange the array in alternating positive and negative items": {
+  "slug": "rearrange-array-elements-by-sign",
+  "via": "reviewed"
+ },
+ "Next Permutation": {
+  "slug": "next-permutation",
+  "via": "sheet"
+ },
+ "Leaders in an Array problem": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Longest Consecutive Sequence in an Array": {
+  "slug": "longest-consecutive-sequence",
+  "via": "sheet"
+ },
+ "Set Matrix Zeros": {
+  "slug": "set-matrix-zeroes",
+  "via": "search",
+  "lcTitle": "Set Matrix Zeroes",
+  "score": 0.5
+ },
+ "Rotate Matrix by 90 degrees": {
+  "slug": "rotate-image",
+  "via": "sheet"
+ },
+ "Print the matrix in spiral manner": {
+  "slug": "spiral-matrix",
+  "via": "sheet"
+ },
+ "Count subarrays with given sum": {
+  "slug": "subarray-sum-equals-k",
+  "via": "sheet"
+ },
+ "Pascal's Triangle": {
+  "slug": "pascals-triangle",
+  "via": "exact",
+  "lcTitle": "Pascal's Triangle"
+ },
+ "Majority Element (n/3 times)": {
+  "slug": "majority-element-ii",
+  "via": "reviewed"
+ },
+ "3-Sum Problem": {
+  "slug": "3sum",
+  "via": "reviewed"
+ },
+ "4-Sum Problem": {
+  "slug": "4sum",
+  "via": "reviewed"
+ },
+ "Largest Subarray with 0 Sum": {
+  "slug": null,
+  "via": "none"
+ },
+ "Count number of subarrays with given xor K": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/count-subarrays-with-given-xor-k",
+  "via": "reviewed"
+ },
+ "Merge Overlapping Subintervals": {
+  "slug": "merge-intervals",
+  "via": "reviewed"
+ },
+ "Merge two sorted arrays without extra space": {
+  "slug": "merge-sorted-array",
+  "via": "sheet"
+ },
+ "Find the repeating and missing number": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/find-the-repeating-and-missing-number",
+  "via": "sheet"
+ },
+ "Count Inversions": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/count-inversions",
+  "via": "sheet"
+ },
+ "Reverse Pairs": {
+  "slug": "reverse-pairs",
+  "via": "sheet"
+ },
+ "Maximum Product Subarray": {
+  "slug": "maximum-product-subarray",
+  "via": "exact",
+  "lcTitle": "Maximum Product Subarray"
+ },
+ "Binary Search to find X in sorted array": {
+  "slug": "binary-search",
+  "via": "reviewed"
+ },
+ "Implement Lower Bound": {
+  "slug": null,
+  "via": "none"
+ },
+ "Implement Upper Bound": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Search Insert Position": {
+  "slug": "search-insert-position",
+  "via": "sheet"
+ },
+ "Floor/Ceil in Sorted Array": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/floor-and-ceil-in-sorted-array",
+  "via": "sheet"
+ },
+ "Find first or last occurrence of a given number in a sorted array": {
+  "slug": "find-first-and-last-position-of-element-in-sorted-array",
+  "via": "reviewed"
+ },
+ "Count occurrences of a number in a sorted array with duplicates": {
+  "slug": null,
+  "via": "none"
+ },
+ "Search in Rotated Sorted Array I": {
+  "slug": "search-in-rotated-sorted-array",
+  "via": "sheet"
+ },
+ "Search in Rotated Sorted Array II": {
+  "slug": "search-in-rotated-sorted-array-ii",
+  "via": "sheet"
+ },
+ "Find minimum in Rotated Sorted Array": {
+  "slug": "find-minimum-in-rotated-sorted-array",
+  "via": "sheet"
+ },
+ "Find out how many times has an array been rotated": {
+  "slug": null,
+  "via": "none"
+ },
+ "Single element in a Sorted Array": {
+  "slug": "single-element-in-a-sorted-array",
+  "via": "sheet"
+ },
+ "Find peak element": {
+  "slug": "find-peak-element",
+  "via": "sheet"
+ },
+ "Find square root of a number in log n": {
+  "slug": "sqrtx",
+  "via": "reviewed"
+ },
+ "Find the Nth root of a number using binary search": {
+  "slug": null,
+  "via": "none"
+ },
+ "Koko Eating Bananas": {
+  "slug": "koko-eating-bananas",
+  "via": "sheet"
+ },
+ "Minimum days to make M bouquets": {
+  "slug": "minimum-number-of-days-to-make-m-bouquets",
+  "via": "sheet"
+ },
+ "Find the smallest Divisor": {
+  "slug": "find-the-smallest-divisor-given-a-threshold",
+  "via": "sheet"
+ },
+ "Capacity to Ship Packages within D Days": {
+  "slug": "capacity-to-ship-packages-within-d-days",
+  "via": "exact",
+  "lcTitle": "Capacity To Ship Packages Within D Days"
+ },
+ "Kth Missing Positive Number": {
+  "slug": "kth-missing-positive-number",
+  "via": "exact",
+  "lcTitle": "Kth Missing Positive Number"
+ },
+ "Aggressive Cows": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/aggressive-cows",
+  "via": "sheet"
+ },
+ "Book Allocation Problem": {
+  "slug": "split-array-largest-sum",
+  "via": "sheet"
+ },
+ "Split array - Largest Sum": {
+  "slug": "split-array-largest-sum",
+  "via": "sheet"
+ },
+ "Painter's partition": {
+  "slug": "split-array-largest-sum",
+  "via": "reviewed"
+ },
+ "Minimize Max Distance to Gas Station": {
+  "slug": "minimize-max-distance-to-gas-station",
+  "via": "sheet"
+ },
+ "Median of 2 sorted arrays": {
+  "slug": "median-of-two-sorted-arrays",
+  "via": "sheet"
+ },
+ "Kth element of 2 sorted arrays": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/kth-element-of-2-sorted-arrays",
+  "via": "sheet"
+ },
+ "Find the row with maximum number of 1's": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Search in a 2D matrix": {
+  "slug": "search-a-2d-matrix",
+  "via": "sheet"
+ },
+ "Search in a row and column wise sorted matrix": {
+  "slug": "search-a-2d-matrix-ii",
+  "via": "reviewed"
+ },
+ "Find Peak Element (2D Matrix)": {
+  "slug": "find-a-peak-element-ii",
+  "via": "reviewed"
+ },
+ "Matrix Median": {
+  "slug": "median-of-a-row-wise-sorted-matrix",
+  "via": "sheet"
+ },
+ "Remove outermost Parenthesis": {
+  "slug": "remove-outermost-parentheses",
+  "via": "search",
+  "lcTitle": "Remove Outermost Parentheses",
+  "score": 0.5
+ },
+ "Reverse words in a given string / Palindrome Check": {
+  "slug": "reverse-words-in-a-string",
+  "via": "search",
+  "lcTitle": "Reverse Words in a String",
+  "score": 0.63
+ },
+ "Largest odd number in a string": {
+  "slug": "largest-odd-number-in-string",
+  "via": "sheet"
+ },
+ "Longest Common Prefix": {
+  "slug": "longest-common-prefix",
+  "via": "sheet"
+ },
+ "Isomorphic String": {
+  "slug": "isomorphic-strings",
+  "via": "sheet"
+ },
+ "Check whether one string is a rotation of another": {
+  "slug": "rotate-string",
+  "via": "reviewed"
+ },
+ "Check if two strings are anagram of each other": {
+  "slug": "valid-anagram",
+  "via": "reviewed"
+ },
+ "Sort Characters by frequency": {
+  "slug": "sort-characters-by-frequency",
+  "via": "sheet"
+ },
+ "Maximum Nesting Depth of Parenthesis": {
+  "slug": "maximum-nesting-depth-of-the-parentheses",
+  "via": "search",
+  "lcTitle": "Maximum Nesting Depth of the Parentheses",
+  "score": 0.57
+ },
+ "Roman Number to Integer and vice versa": {
+  "slug": "roman-to-integer",
+  "via": "reviewed"
+ },
+ "Implement Atoi": {
+  "slug": "string-to-integer-atoi",
+  "via": "reviewed"
+ },
+ "Count Number of Substrings": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Longest Palindromic Substring [Do it without DP]": {
+  "slug": "longest-palindromic-substring",
+  "via": "exact",
+  "lcTitle": "Longest Palindromic Substring"
+ },
+ "Sum of Beauty of all substring": {
+  "slug": "sum-of-beauty-of-all-substrings",
+  "via": "search",
+  "lcTitle": "Sum of Beauty of All Substrings",
+  "score": 0.67
+ },
+ "Reverse Every Word in A String": {
+  "slug": "reverse-words-in-a-string",
+  "via": "sheet"
+ },
+ "Introduction to LinkedList, learn about struct, and node": {
+  "slug": null,
+  "via": "none"
+ },
+ "Inserting a node in LinkedList": {
+  "slug": null,
+  "via": "none"
+ },
+ "Deleting a node in LinkedList": {
+  "slug": null,
+  "via": "none"
+ },
+ "Find the length of the linkedlist [learn traversal]": {
+  "slug": null,
+  "via": "none"
+ },
+ "Search an element in the LL": {
+  "slug": null,
+  "via": "none"
+ },
+ "Introduction to DLL, learn about struct, and node": {
+  "slug": null,
+  "via": "none"
+ },
+ "Insert a node in DLL": {
+  "slug": null,
+  "via": "none"
+ },
+ "Delete a node in DLL": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Reverse a DLL": {
+  "slug": null,
+  "via": "none"
+ },
+ "Middle of a LinkedList [TortoiseHare Method]": {
+  "slug": "middle-of-the-linked-list",
+  "via": "reviewed"
+ },
+ "Reverse a LinkedList [Iterative]": {
+  "slug": "reverse-linked-list",
+  "via": "reviewed"
+ },
+ "Reverse a LL [Recursive]": {
+  "slug": "reverse-linked-list",
+  "via": "sheet"
+ },
+ "Detect a loop in LL": {
+  "slug": "linked-list-cycle",
+  "via": "sheet"
+ },
+ "Find the starting point in LL": {
+  "slug": "linked-list-cycle-ii",
+  "via": "sheet"
+ },
+ "Length of Loop in LL": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/length-of-loop-in-ll",
+  "via": "sheet"
+ },
+ "Check if LL is palindrome or not": {
+  "slug": "palindrome-linked-list",
+  "via": "sheet"
+ },
+ "Segregate odd and even nodes in LL": {
+  "slug": "odd-even-linked-list",
+  "via": "sheet"
+ },
+ "Remove Nth node from the back of the LL": {
+  "slug": "remove-nth-node-from-end-of-list",
+  "via": "sheet"
+ },
+ "Delete the middle node of LL": {
+  "slug": "delete-the-middle-node-of-a-linked-list",
+  "via": "search",
+  "lcTitle": "Delete the Middle Node of a Linked List",
+  "score": 0.56
+ },
+ "Sort LL": {
+  "slug": "sort-list",
+  "via": "sheet"
+ },
+ "Sort a LL of 0's 1's and 2's by changing links": {
+  "slug": null,
+  "via": "none"
+ },
+ "Find the intersection point of Y LL": {
+  "slug": "intersection-of-two-linked-lists",
+  "via": "sheet"
+ },
+ "Add 1 to a number represented by LL": {
+  "slug": "plus-one-linked-list",
+  "via": "sheet"
+ },
+ "Add 2 numbers in LL": {
+  "slug": "add-two-numbers",
+  "via": "reviewed"
+ },
+ "Delete all occurrences of a key in DLL": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/delete-all-occurrences-of-a-key-in-dll",
+  "via": "sheet"
+ },
+ "Find pairs with given sum in DLL": {
+  "slug": null,
+  "via": "none"
+ },
+ "Remove duplicates from sorted DLL": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/remove-duplicated-from-sorted-dll",
+  "via": "reviewed"
+ },
+ "Reverse LL in group of given size K": {
+  "slug": "reverse-nodes-in-k-group",
+  "via": "sheet"
+ },
+ "Rotate a LL": {
+  "slug": "rotate-list",
+  "via": "sheet"
+ },
+ "Flattening of LL": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Clone a Linked List with random and next pointer": {
+  "slug": "copy-list-with-random-pointer",
+  "via": "reviewed"
+ },
+ "Recursive Implementation of atoi()": {
+  "slug": "string-to-integer-atoi",
+  "via": "reviewed"
+ },
+ "Pow(x, n)": {
+  "slug": "powx-n",
+  "via": "sheet"
+ },
+ "Count Good numbers": {
+  "slug": "count-good-numbers",
+  "via": "exact",
+  "lcTitle": "Count Good Numbers"
+ },
+ "Sort a stack using recursion": {
+  "slug": null,
+  "via": "none"
+ },
+ "Reverse a stack using recursion": {
+  "slug": null,
+  "via": "none"
+ },
+ "Generate all binary strings": {
+  "slug": null,
+  "via": "none"
+ },
+ "Generate Parenthesis": {
+  "slug": "generate-parentheses",
+  "via": "reviewed"
+ },
+ "Print all subsequences/Power Set": {
+  "slug": "subsets",
+  "via": "reviewed"
+ },
+ "Learn All Patterns of Subsequences (Theory)": {
+  "slug": null,
+  "via": "none"
+ },
+ "Count all subsequences with sum K": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/count-all-subsequences-with-sum-k",
+  "via": "sheet"
+ },
+ "Check if there exists a subsequence with sum K": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/check-if-there-exists-a-subsequence-with-sum-k",
+  "via": "sheet"
+ },
+ "Combination Sum": {
+  "slug": "combination-sum",
+  "via": "sheet"
+ },
+ "Combination Sum-II": {
+  "slug": "combination-sum-ii",
+  "via": "sheet"
+ },
+ "Subset Sum-I": {
+  "slug": null,
+  "via": "none"
+ },
+ "Subset Sum-II": {
+  "slug": "subsets-ii",
+  "via": "reviewed"
+ },
+ "Combination Sum - III": {
+  "slug": "combination-sum-iii",
+  "via": "sheet"
+ },
+ "Letter Combinations of a Phone number": {
+  "slug": "letter-combinations-of-a-phone-number",
+  "via": "sheet"
+ },
+ "Palindrome Partitioning": {
+  "slug": "palindrome-partitioning",
+  "via": "sheet"
+ },
+ "Word Search": {
+  "slug": "word-search",
+  "via": "sheet"
+ },
+ "N Queen": {
+  "slug": "n-queens",
+  "via": "sheet"
+ },
+ "Rat in a Maze": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/rat-in-a-maze",
+  "via": "sheet"
+ },
+ "Word Break": {
+  "slug": "word-break",
+  "via": "exact",
+  "lcTitle": "Word Break"
+ },
+ "M Coloring Problem": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/m-coloring-problem",
+  "via": "sheet"
+ },
+ "Sudoku Solver": {
+  "slug": "sudoku-solver",
+  "via": "sheet"
+ },
+ "Expression Add Operators": {
+  "slug": "expression-add-operators",
+  "via": "exact",
+  "lcTitle": "Expression Add Operators"
+ },
+ "Introduction to Bit Manipulation [Theory]": {
+  "slug": null,
+  "via": "none"
+ },
+ "Check if the i-th bit is set or not": {
+  "slug": null,
+  "via": "none"
+ },
+ "Check if a number is odd or not": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/check-if-a-number-is-prime-or-not",
+  "via": "sheet"
+ },
+ "Check if a number is power of 2 or not": {
+  "slug": "power-of-two",
+  "via": "reviewed"
+ },
+ "Count the number of set bits": {
+  "slug": "number-of-1-bits",
+  "via": "reviewed"
+ },
+ "Set/Unset the rightmost unset bit": {
+  "slug": null,
+  "via": "none"
+ },
+ "Swap two numbers": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Divide two integers w/o using multiplication, division and mod": {
+  "slug": "divide-two-integers",
+  "via": "reviewed"
+ },
+ "Count number of bits to be flipped to convert A to B": {
+  "slug": "minimum-bit-flips-to-convert-number",
+  "via": "reviewed"
+ },
+ "Find the number that appears odd number of times": {
+  "slug": "single-number",
+  "via": "reviewed"
+ },
+ "Power Set": {
+  "slug": "subsets",
+  "via": "sheet"
+ },
+ "Find xor of numbers from L to R": {
+  "slug": null,
+  "via": "none"
+ },
+ "Find the two numbers appearing odd number of times": {
+  "slug": "single-number-iii",
+  "via": "reviewed"
+ },
+ "Print Prime Factors of a Number": {
+  "slug": null,
+  "via": "none"
+ },
+ "All Divisors of a Number": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/divisors-of-a-number",
+  "via": "sheet"
+ },
+ "Sieve of Eratosthenes": {
+  "slug": null,
+  "via": "none"
+ },
+ "Find Prime Factorisation of a Number using Sieve": {
+  "slug": null,
+  "via": "none"
+ },
+ "Power(n, x)": {
+  "slug": "powx-n",
+  "via": "search",
+  "lcTitle": "Pow(x, n)",
+  "score": 0.5
+ },
+ "Implement Stack using Arrays": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/implement-stack-using-arrays",
+  "via": "reviewed"
+ },
+ "Implement Queue using Arrays": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/implement-queue-using-arrays",
+  "via": "reviewed"
+ },
+ "Implement Stack using Queue": {
+  "slug": "implement-stack-using-queues",
+  "via": "sheet"
+ },
+ "Implement Queue using Stack": {
+  "slug": "implement-queue-using-stacks",
+  "via": "sheet"
+ },
+ "Implement stack using Linkedlist": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/implement-stack-using-linkedlist",
+  "via": "reviewed"
+ },
+ "Implement queue using Linkedlist": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/implement-queue-using-linkedlist",
+  "via": "reviewed"
+ },
+ "Check for balanced parenthesis": {
+  "slug": "valid-parentheses",
+  "via": "reviewed"
+ },
+ "Implement Min Stack": {
+  "slug": "min-stack",
+  "via": "sheet"
+ },
+ "Infix to Postfix Conversion using Stack": {
+  "slug": null,
+  "via": "none"
+ },
+ "Prefix to Infix Conversion": {
+  "slug": null,
+  "via": "none"
+ },
+ "Prefix to Postfix Conversion": {
+  "slug": null,
+  "via": "none"
+ },
+ "Postfix to Prefix Conversion": {
+  "slug": null,
+  "via": "none"
+ },
+ "Postfix to Infix": {
+  "slug": null,
+  "via": "none"
+ },
+ "Convert Infix To Prefix Notation": {
+  "slug": null,
+  "via": "none"
+ },
+ "Next Greater Element": {
+  "slug": "next-greater-element-i",
+  "via": "sheet"
+ },
+ "Next Greater Element 2": {
+  "slug": "next-greater-element-ii",
+  "via": "sheet"
+ },
+ "Next Smaller Element": {
+  "slug": null,
+  "via": "none"
+ },
+ "Number of NGEs to the right": {
+  "slug": null,
+  "via": "none"
+ },
+ "Trapping Rainwater": {
+  "slug": "trapping-rain-water",
+  "via": "sheet"
+ },
+ "Sum of subarray minimum": {
+  "slug": "sum-of-subarray-minimums",
+  "via": "sheet"
+ },
+ "Asteroid Collision": {
+  "slug": "asteroid-collision",
+  "via": "sheet"
+ },
+ "Sum of subarray ranges": {
+  "slug": "sum-of-subarray-ranges",
+  "via": "sheet"
+ },
+ "Remove k Digits": {
+  "slug": "remove-k-digits",
+  "via": "sheet"
+ },
+ "Largest rectangle in a histogram": {
+  "slug": "largest-rectangle-in-histogram",
+  "via": "sheet"
+ },
+ "Maximal Rectangles": {
+  "slug": "maximal-rectangle",
+  "via": "search",
+  "lcTitle": "Maximal Rectangle",
+  "score": 1
+ },
+ "Sliding Window maximum": {
+  "slug": "sliding-window-maximum",
+  "via": "sheet"
+ },
+ "Stock span problem": {
+  "slug": "online-stock-span",
+  "via": "sheet"
+ },
+ "The Celebrity Problem": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "LRU cache (IMPORTANT)": {
+  "slug": "lru-cache",
+  "via": "sheet"
+ },
+ "LFU cache": {
+  "slug": "lfu-cache",
+  "via": "exact",
+  "lcTitle": "LFU Cache"
+ },
+ "Longest Substring Without Repeating Characters": {
+  "slug": "longest-substring-without-repeating-characters",
+  "via": "sheet"
+ },
+ "Max Consecutive Ones III": {
+  "slug": "max-consecutive-ones-iii",
+  "via": "sheet"
+ },
+ "Fruit Into Baskets": {
+  "slug": "fruit-into-baskets",
+  "via": "sheet"
+ },
+ "Longest repeating character replacement": {
+  "slug": "longest-repeating-character-replacement",
+  "via": "sheet"
+ },
+ "Binary subarray with sum": {
+  "slug": "binary-subarrays-with-sum",
+  "via": "sheet"
+ },
+ "Count number of nice subarrays": {
+  "slug": "count-number-of-nice-subarrays",
+  "via": "sheet"
+ },
+ "Number of substring containing all three characters": {
+  "slug": "number-of-substrings-containing-all-three-characters",
+  "via": "sheet"
+ },
+ "Maximum point you can obtain from cards": {
+  "slug": "maximum-points-you-can-obtain-from-cards",
+  "via": "sheet"
+ },
+ "Longest Substring with At Most K Distinct Characters": {
+  "slug": "longest-substring-with-at-most-k-distinct-characters",
+  "via": "sheet"
+ },
+ "Subarray with k different integers": {
+  "slug": "subarrays-with-k-different-integers",
+  "via": "search",
+  "lcTitle": "Subarrays with K Different Integers",
+  "score": 1
+ },
+ "Minimum Window Substring": {
+  "slug": "minimum-window-substring",
+  "via": "sheet"
+ },
+ "Minimum Window Subsequence": {
+  "slug": "minimum-window-subsequence",
+  "via": "exact",
+  "lcTitle": "Minimum Window Subsequence",
+  "paid": true
+ },
+ "Introduction to Priority Queues using Binary Heaps": {
+  "slug": null,
+  "via": "none"
+ },
+ "Min Heap and Max Heap Implementation": {
+  "slug": null,
+  "via": "none"
+ },
+ "Check if an array represents a min-heap or not": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/check-if-an-array-represents-a-min-heap-",
+  "via": "sheet"
+ },
+ "Convert min Heap to max Heap": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/convert-min-heap-to-max-heap",
+  "via": "sheet"
+ },
+ "Kth largest element in an array [use priority queue]": {
+  "slug": "kth-largest-element-in-an-array",
+  "via": "exact",
+  "lcTitle": "Kth Largest Element in an Array"
+ },
+ "Kth smallest element in an array [use priority queue]": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Sort K sorted array": {
+  "slug": null,
+  "via": "none"
+ },
+ "Merge M sorted Lists": {
+  "slug": "merge-k-sorted-lists",
+  "via": "reviewed"
+ },
+ "Replace each array element by its corresponding rank": {
+  "slug": "rank-transform-of-an-array",
+  "via": "reviewed"
+ },
+ "Task Scheduler": {
+  "slug": "task-scheduler",
+  "via": "exact",
+  "lcTitle": "Task Scheduler"
+ },
+ "Hand of Straights": {
+  "slug": "hand-of-straights",
+  "via": "exact",
+  "lcTitle": "Hand of Straights"
+ },
+ "Design Twitter": {
+  "slug": "design-twitter",
+  "via": "exact",
+  "lcTitle": "Design Twitter"
+ },
+ "Connect n ropes with minimal cost": {
+  "slug": null,
+  "via": "none"
+ },
+ "Kth largest element in a stream of running integers": {
+  "slug": "kth-largest-element-in-a-stream",
+  "via": "sheet"
+ },
+ "Maximum Sum Combination": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Find Median from Data Stream": {
+  "slug": "find-median-from-data-stream",
+  "via": "exact",
+  "lcTitle": "Find Median from Data Stream"
+ },
+ "K most frequent elements": {
+  "slug": "top-k-frequent-elements",
+  "via": "search",
+  "lcTitle": "Top K Frequent Elements",
+  "score": 0.6
+ },
+ "Assign Cookies": {
+  "slug": "assign-cookies",
+  "via": "sheet"
+ },
+ "Fractional Knapsack Problem": {
+  "slug": null,
+  "via": "none"
+ },
+ "Greedy algorithm to find minimum number of coins": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Lemonade Change": {
+  "slug": "lemonade-change",
+  "via": "sheet"
+ },
+ "Valid Parenthesis Checker": {
+  "slug": "valid-parenthesis-string",
+  "via": "sheet"
+ },
+ "N meetings in one room": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/n-meetings-in-one-room",
+  "via": "sheet"
+ },
+ "Jump Game": {
+  "slug": "jump-game",
+  "via": "exact",
+  "lcTitle": "Jump Game"
+ },
+ "Jump Game 2": {
+  "slug": "jump-game-ii",
+  "via": "exact",
+  "lcTitle": "Jump Game II"
+ },
+ "Minimum number of platforms required for a railway": {
+  "slug": "divide-intervals-into-minimum-number-of-groups",
+  "via": "sheet"
+ },
+ "Job sequencing Problem": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/job-sequencing-problem",
+  "via": "sheet"
+ },
+ "Candy": {
+  "slug": "candy",
+  "via": "sheet"
+ },
+ "Program for Shortest Job First (or SJF) CPU Scheduling": {
+  "slug": null,
+  "via": "none"
+ },
+ "Program for LRU Page Replacement Algorithm": {
+  "slug": null,
+  "via": "none"
+ },
+ "Insert Interval": {
+  "slug": "insert-interval",
+  "via": "sheet"
+ },
+ "Merge Intervals": {
+  "slug": "merge-intervals",
+  "via": "exact",
+  "lcTitle": "Merge Intervals"
+ },
+ "Non-overlapping Intervals": {
+  "slug": "non-overlapping-intervals",
+  "via": "sheet"
+ },
+ "Introduction to Trees": {
+  "slug": null,
+  "via": "none"
+ },
+ "Binary Tree Representation in C++": {
+  "slug": null,
+  "via": "none"
+ },
+ "Binary Tree Representation in Java": {
+  "slug": null,
+  "via": "none"
+ },
+ "Binary Tree Traversals in Binary Tree": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Preorder Traversal of Binary Tree": {
+  "slug": "binary-tree-preorder-traversal",
+  "via": "search",
+  "lcTitle": "Binary Tree Preorder Traversal",
+  "score": 0.8
+ },
+ "Inorder Traversal of Binary Tree": {
+  "slug": "binary-tree-inorder-traversal",
+  "via": "search",
+  "lcTitle": "Binary Tree Inorder Traversal",
+  "score": 0.8
+ },
+ "Post-order Traversal of Binary Tree": {
+  "slug": "binary-tree-postorder-traversal",
+  "via": "reviewed"
+ },
+ "Level order Traversal / Level order traversal in spiral form": {
+  "slug": "binary-tree-level-order-traversal",
+  "via": "reviewed"
+ },
+ "Iterative Preorder Traversal of Binary Tree": {
+  "slug": "binary-tree-preorder-traversal",
+  "via": "search",
+  "lcTitle": "Binary Tree Preorder Traversal",
+  "score": 0.67
+ },
+ "Iterative Inorder Traversal of Binary Tree": {
+  "slug": "binary-tree-inorder-traversal",
+  "via": "search",
+  "lcTitle": "Binary Tree Inorder Traversal",
+  "score": 0.67
+ },
+ "Post-order Traversal of Binary Tree using 2 stack": {
+  "slug": "binary-tree-postorder-traversal",
+  "via": "reviewed"
+ },
+ "Post-order Traversal of Binary Tree using 1 stack": {
+  "slug": "binary-tree-postorder-traversal",
+  "via": "reviewed"
+ },
+ "Preorder, Inorder, and Postorder Traversal in one Traversal": {
+  "slug": null,
+  "via": "none"
+ },
+ "Height of a Binary Tree": {
+  "slug": "maximum-depth-of-binary-tree",
+  "via": "reviewed"
+ },
+ "Check if the Binary tree is height-balanced or not": {
+  "slug": "balanced-binary-tree",
+  "via": "reviewed"
+ },
+ "Diameter of Binary Tree": {
+  "slug": "diameter-of-binary-tree",
+  "via": "sheet"
+ },
+ "Maximum path sum": {
+  "slug": "binary-tree-maximum-path-sum",
+  "via": "sheet"
+ },
+ "Check if two trees are identical or not": {
+  "slug": "same-tree",
+  "via": "sheet"
+ },
+ "Zig Zag Traversal of Binary Tree": {
+  "slug": "binary-tree-zigzag-level-order-traversal",
+  "via": "reviewed"
+ },
+ "Boundary Traversal of Binary Tree": {
+  "slug": "boundary-of-binary-tree",
+  "via": "search",
+  "lcTitle": "Boundary of Binary Tree",
+  "score": 0.8,
+  "paid": true
+ },
+ "Vertical Order Traversal of Binary Tree": {
+  "slug": "vertical-order-traversal-of-a-binary-tree",
+  "via": "search",
+  "lcTitle": "Vertical Order Traversal of a Binary Tree",
+  "score": 0.86
+ },
+ "Top View of Binary Tree": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Bottom View of Binary Tree": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Right/Left View of Binary Tree": {
+  "slug": "binary-tree-right-side-view",
+  "via": "search",
+  "lcTitle": "Binary Tree Right Side View",
+  "score": 0.57
+ },
+ "Symmetric Binary Tree": {
+  "slug": "symmetric-tree",
+  "via": "search",
+  "lcTitle": "Symmetric Tree",
+  "score": 0.67
+ },
+ "Root to Node Path in Binary Tree": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "LCA in Binary Tree": {
+  "slug": "lowest-common-ancestor-of-a-binary-tree",
+  "via": "reviewed"
+ },
+ "Maximum width of a Binary Tree": {
+  "slug": "maximum-width-of-binary-tree",
+  "via": "search",
+  "lcTitle": "Maximum Width of Binary Tree",
+  "score": 0.83
+ },
+ "Check for Children Sum Property": {
+  "slug": null,
+  "via": "none"
+ },
+ "Print all the Nodes at a distance of K in a Binary Tree": {
+  "slug": "all-nodes-distance-k-in-binary-tree",
+  "via": "search",
+  "lcTitle": "All Nodes Distance K in Binary Tree",
+  "score": 0.58
+ },
+ "Minimum time taken to BURN the Binary Tree from a Node": {
+  "slug": null,
+  "via": "none"
+ },
+ "Count total Nodes in a COMPLETE Binary Tree": {
+  "slug": "count-complete-tree-nodes",
+  "via": "reviewed"
+ },
+ "Requirements needed to construct a Unique Binary Tree | Theory": {
+  "slug": null,
+  "via": "none"
+ },
+ "Construct Binary Tree from inorder and preorder": {
+  "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+  "via": "search",
+  "lcTitle": "Construct Binary Tree from Preorder and Inorder Traversal",
+  "score": 0.88
+ },
+ "Construct the Binary Tree from Postorder and Inorder Traversal": {
+  "slug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+  "via": "search",
+  "lcTitle": "Construct Binary Tree from Inorder and Postorder Traversal",
+  "score": 0.89
+ },
+ "Serialize and deserialize Binary Tree": {
+  "slug": "serialize-and-deserialize-binary-tree",
+  "via": "exact",
+  "lcTitle": "Serialize and Deserialize Binary Tree"
+ },
+ "Morris Preorder Traversal of a Binary Tree": {
+  "slug": "binary-tree-preorder-traversal",
+  "via": "search",
+  "lcTitle": "Binary Tree Preorder Traversal",
+  "score": 0.57
+ },
+ "Morris Inorder Traversal of a Binary Tree": {
+  "slug": "binary-tree-inorder-traversal",
+  "via": "search",
+  "lcTitle": "Binary Tree Inorder Traversal",
+  "score": 0.57
+ },
+ "Flatten Binary Tree to LinkedList": {
+  "slug": "flatten-binary-tree-to-linked-list",
+  "via": "search",
+  "lcTitle": "Flatten Binary Tree to Linked List",
+  "score": 0.57
+ },
+ "Introduction to Binary Search Tree": {
+  "slug": null,
+  "via": "none"
+ },
+ "Search in a Binary Search Tree": {
+  "slug": "search-in-a-binary-search-tree",
+  "via": "exact",
+  "lcTitle": "Search in a Binary Search Tree"
+ },
+ "Find Min/Max in BST": {
+  "slug": null,
+  "via": "none"
+ },
+ "Ceil in a Binary Search Tree": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Floor in a Binary Search Tree": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Insert a given Node in Binary Search Tree": {
+  "slug": "insert-into-a-binary-search-tree",
+  "via": "reviewed"
+ },
+ "Delete a Node in Binary Search Tree": {
+  "slug": "delete-node-in-a-bst",
+  "via": "reviewed"
+ },
+ "Find K-th smallest/largest element in BST": {
+  "slug": "kth-smallest-element-in-a-bst",
+  "via": "reviewed"
+ },
+ "Check if a tree is a BST or BT": {
+  "slug": "validate-binary-search-tree",
+  "via": "sheet"
+ },
+ "LCA in Binary Search Tree": {
+  "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+  "via": "reviewed"
+ },
+ "Construct a BST from a preorder traversal": {
+  "slug": "construct-binary-search-tree-from-preorder-traversal",
+  "via": "sheet"
+ },
+ "Inorder Successor/Predecessor in BST": {
+  "slug": "inorder-successor-in-bst",
+  "via": "sheet"
+ },
+ "Merge 2 BST's": {
+  "slug": "all-elements-in-two-binary-search-trees",
+  "via": "reviewed"
+ },
+ "Two Sum In BST | Check if there exists a pair with Sum K": {
+  "slug": "two-sum-iv-input-is-a-bst",
+  "via": "reviewed"
+ },
+ "Recover BST | Correct BST with two nodes swapped": {
+  "slug": "recover-binary-search-tree",
+  "via": "sheet"
+ },
+ "Largest BST in Binary Tree": {
+  "slug": "largest-bst-subtree",
+  "via": "sheet"
+ },
+ "Graph and Types": {
+  "slug": null,
+  "via": "none"
+ },
+ "Graph Representation | C++": {
+  "slug": null,
+  "via": "none"
+ },
+ "Graph Representation | Java": {
+  "slug": null,
+  "via": "none"
+ },
+ "Connected Components | Logic Explanation": {
+  "slug": null,
+  "via": "none"
+ },
+ "BFS": {
+  "slug": null,
+  "via": "none"
+ },
+ "DFS": {
+  "slug": null,
+  "via": "none"
+ },
+ "Number of provinces (leetcode)": {
+  "slug": "number-of-provinces",
+  "via": "sheet"
+ },
+ "Connected Components Problem in Matrix": {
+  "slug": "number-of-islands",
+  "via": "reviewed"
+ },
+ "Rotten Oranges": {
+  "slug": "rotting-oranges",
+  "via": "sheet"
+ },
+ "Flood fill": {
+  "slug": "flood-fill",
+  "via": "exact",
+  "lcTitle": "Flood Fill"
+ },
+ "Cycle Detection in undirected Graph (bfs)": {
+  "slug": null,
+  "via": "none"
+ },
+ "Cycle Detection in undirected Graph (dfs)": {
+  "slug": null,
+  "via": "none"
+ },
+ "0/1 Matrix (Bfs Problem)": {
+  "slug": "01-matrix",
+  "via": "reviewed"
+ },
+ "Surrounded Regions (dfs)": {
+  "slug": "surrounded-regions",
+  "via": "search",
+  "lcTitle": "Surrounded Regions",
+  "score": 0.67
+ },
+ "Number of Enclaves [flood fill implementation - multisource]": {
+  "slug": "number-of-enclaves",
+  "via": "sheet"
+ },
+ "Word ladder - 1": {
+  "slug": "word-ladder",
+  "via": "sheet"
+ },
+ "Word ladder - 2": {
+  "slug": "word-ladder-ii",
+  "via": "sheet"
+ },
+ "Number of Distinct Islands [dfs multisource]": {
+  "slug": "number-of-distinct-islands",
+  "via": "sheet"
+ },
+ "Bipartite Graph (DFS)": {
+  "slug": "is-graph-bipartite",
+  "via": "search",
+  "lcTitle": "Is Graph Bipartite?",
+  "score": 0.5
+ },
+ "Cycle Detection in Directed Graph (DFS)": {
+  "slug": null,
+  "via": "none"
+ },
+ "Topo Sort": {
+  "slug": null,
+  "via": "none"
+ },
+ "Kahn's Algorithm": {
+  "slug": null,
+  "via": "none"
+ },
+ "Cycle Detection in Directed Graph (BFS)": {
+  "slug": null,
+  "via": "none"
+ },
+ "Course Schedule - I": {
+  "slug": "course-schedule",
+  "via": "sheet"
+ },
+ "Course Schedule - II": {
+  "slug": "course-schedule-ii",
+  "via": "sheet"
+ },
+ "Find eventual safe states": {
+  "slug": "find-eventual-safe-states",
+  "via": "sheet"
+ },
+ "Alien dictionary": {
+  "slug": "alien-dictionary",
+  "via": "sheet"
+ },
+ "Shortest Path in UG with unit weights": {
+  "slug": null,
+  "via": "none"
+ },
+ "Shortest Path in DAG": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/shortest-path-in-dag",
+  "via": "reviewed"
+ },
+ "Dijkstra's Algorithm": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/dijkstra's-algorithm",
+  "via": "sheet"
+ },
+ "Why priority Queue is used in Dijkstra's Algorithm": {
+  "slug": null,
+  "via": "none"
+ },
+ "Shortest path in a binary maze": {
+  "slug": "shortest-path-in-binary-matrix",
+  "via": "search",
+  "lcTitle": "Shortest Path in Binary Matrix",
+  "score": 0.57
+ },
+ "Path with minimum effort": {
+  "slug": "path-with-minimum-effort",
+  "via": "sheet"
+ },
+ "Cheapest flights within k stops": {
+  "slug": "cheapest-flights-within-k-stops",
+  "via": "sheet"
+ },
+ "Network Delay time": {
+  "slug": "network-delay-time",
+  "via": "exact",
+  "lcTitle": "Network Delay Time"
+ },
+ "Number of ways to arrive at destination": {
+  "slug": "number-of-ways-to-arrive-at-destination",
+  "via": "sheet"
+ },
+ "Minimum steps to reach end": {
+  "slug": null,
+  "via": "none"
+ },
+ "Bellman Ford Algorithm": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/bellman-ford-algorithm",
+  "via": "sheet"
+ },
+ "Floyd Warshall Algorithm": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/floyd-warshall-algorithm",
+  "via": "sheet"
+ },
+ "Find city with minimum neighbors in a threshold distance": {
+  "slug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+  "via": "search",
+  "lcTitle": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+  "score": 0.5
+ },
+ "Minimum Spanning Tree": {
+  "slug": null,
+  "via": "none"
+ },
+ "Prim's Algorithm": {
+  "slug": null,
+  "via": "none"
+ },
+ "Disjoint Set [Union by Rank]": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/disjoint-set-",
+  "via": "sheet"
+ },
+ "Disjoint Set [Union by Size]": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/disjoint-set-",
+  "via": "sheet"
+ },
+ "Kruskal's Algorithm": {
+  "slug": null,
+  "via": "none"
+ },
+ "Number of operations to make network connected": {
+  "slug": "number-of-operations-to-make-network-connected",
+  "via": "sheet"
+ },
+ "Most stones removed with same rows or columns": {
+  "slug": "most-stones-removed-with-same-row-or-column",
+  "via": "sheet"
+ },
+ "Accounts merge": {
+  "slug": "accounts-merge",
+  "via": "sheet"
+ },
+ "Number of island II": {
+  "slug": "number-of-islands-ii",
+  "via": "sheet"
+ },
+ "Making a Large Island": {
+  "slug": "making-a-large-island",
+  "via": "sheet"
+ },
+ "Swim in rising water": {
+  "slug": "swim-in-rising-water",
+  "via": "exact",
+  "lcTitle": "Swim in Rising Water"
+ },
+ "Bridges in Graph": {
+  "slug": "critical-connections-in-a-network",
+  "via": "sheet"
+ },
+ "Articulation Point": {
+  "slug": null,
+  "via": "none"
+ },
+ "Kosaraju's Algorithm": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Dynamic Programming Introduction": {
+  "slug": null,
+  "via": "none"
+ },
+ "Climbing Stairs": {
+  "slug": "climbing-stairs",
+  "via": "sheet"
+ },
+ "Frog Jump (DP-3)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/frog-jump",
+  "via": "reviewed"
+ },
+ "Frog Jump with k distances (DP-4)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/frog-jump-with-k-distances",
+  "via": "sheet"
+ },
+ "Maximum sum of non-adjacent elements (DP-5)": {
+  "slug": "house-robber",
+  "via": "sheet"
+ },
+ "House Robber (DP-6)": {
+  "slug": "house-robber-ii",
+  "via": "sheet"
+ },
+ "Ninja's Training (DP-7)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/ninja's-training",
+  "via": "sheet"
+ },
+ "Grid Unique Paths : DP on Grids (DP-8)": {
+  "slug": "unique-paths",
+  "via": "reviewed"
+ },
+ "Grid Unique Paths 2 (DP-9)": {
+  "slug": "unique-paths-ii",
+  "via": "search",
+  "lcTitle": "Unique Paths II",
+  "score": 0.75
+ },
+ "Minimum path sum in Grid (DP-10)": {
+  "slug": "minimum-path-sum",
+  "via": "search",
+  "lcTitle": "Minimum Path Sum",
+  "score": 0.6
+ },
+ "Minimum path sum in Triangular Grid (DP-11)": {
+  "slug": "triangle",
+  "via": "reviewed"
+ },
+ "Minimum/Maximum Falling Path Sum (DP-12)": {
+  "slug": "minimum-falling-path-sum",
+  "via": "sheet"
+ },
+ "3-d DP : Ninja and his friends (DP-13)": {
+  "slug": "cherry-pickup-ii",
+  "via": "reviewed"
+ },
+ "Subset sum equal to target (DP-14)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/subset-sum-equals-to-target",
+  "via": "reviewed"
+ },
+ "Partition Equal Subset Sum (DP-15)": {
+  "slug": "partition-equal-subset-sum",
+  "via": "sheet"
+ },
+ "Partition Set Into 2 Subsets With Min Absolute Sum Diff (DP-16)": {
+  "slug": null,
+  "via": "none"
+ },
+ "Count Subsets with Sum K (DP-17)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/count-subsets-with-sum-k",
+  "via": "sheet"
+ },
+ "Count Partitions with Given Difference (DP-18)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/count-partitions-with-given-difference",
+  "via": "reviewed"
+ },
+ "Minimum Coins (DP-20)": {
+  "slug": "coin-change",
+  "via": "sheet"
+ },
+ "Target Sum (DP-21)": {
+  "slug": "target-sum",
+  "via": "sheet"
+ },
+ "Coin Change 2 (DP-22)": {
+  "slug": "coin-change-ii",
+  "via": "sheet"
+ },
+ "Unbounded Knapsack (DP-23)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/unbounded-knapsack",
+  "via": "sheet"
+ },
+ "Rod Cutting Problem (DP-24)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/rod-cutting-problem",
+  "via": "sheet"
+ },
+ "Longest Common Subsequence (DP-25)": {
+  "slug": "longest-common-subsequence",
+  "via": "sheet"
+ },
+ "Print Longest Common Subsequence (DP-26)": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Longest Common Substring (DP-27)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/longest-common-substring",
+  "via": "reviewed"
+ },
+ "Longest Palindromic Subsequence (DP-28)": {
+  "slug": "longest-palindromic-subsequence",
+  "via": "sheet"
+ },
+ "Minimum insertions to make string palindrome (DP-29)": {
+  "slug": "minimum-insertion-steps-to-make-a-string-palindrome",
+  "via": "sheet"
+ },
+ "Minimum Insertions/Deletions to Convert String (DP-30)": {
+  "slug": "delete-operation-for-two-strings",
+  "via": "reviewed"
+ },
+ "Shortest Common Supersequence (DP-31)": {
+  "slug": "shortest-common-supersequence",
+  "via": "sheet"
+ },
+ "Distinct Subsequences (DP-32)": {
+  "slug": "distinct-subsequences",
+  "via": "sheet"
+ },
+ "Edit Distance (DP-33)": {
+  "slug": "edit-distance",
+  "via": "sheet"
+ },
+ "Wildcard Matching (DP-34)": {
+  "slug": "wildcard-matching",
+  "via": "sheet"
+ },
+ "Best Time to Buy and Sell Stock (DP-35)": {
+  "slug": "best-time-to-buy-and-sell-stock",
+  "via": "sheet"
+ },
+ "Buy and Sell Stock - II (DP-36)": {
+  "slug": "best-time-to-buy-and-sell-stock-ii",
+  "via": "search",
+  "lcTitle": "Best Time to Buy and Sell Stock II",
+  "score": 0.63
+ },
+ "Buy and Sell Stocks III (DP-37)": {
+  "slug": "best-time-to-buy-and-sell-stock-iii",
+  "via": "search",
+  "lcTitle": "Best Time to Buy and Sell Stock III",
+  "score": 0.63
+ },
+ "Buy and Sell Stock IV (DP-38)": {
+  "slug": "best-time-to-buy-and-sell-stock-iv",
+  "via": "search",
+  "lcTitle": "Best Time to Buy and Sell Stock IV",
+  "score": 0.63
+ },
+ "Buy and Sell Stocks With Cooldown (DP-39)": {
+  "slug": "best-time-to-buy-and-sell-stock-with-cooldown",
+  "via": "search",
+  "lcTitle": "Best Time to Buy and Sell Stock with Cooldown",
+  "score": 0.67
+ },
+ "Buy and Sell Stocks With Transaction Fee (DP-40)": {
+  "slug": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+  "via": "search",
+  "lcTitle": "Best Time to Buy and Sell Stock with Transaction Fee",
+  "score": 0.7
+ },
+ "Longest Increasing Subsequence (DP-41)": {
+  "slug": "longest-increasing-subsequence",
+  "via": "sheet"
+ },
+ "Printing Longest Increasing Subsequence (DP-42)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/print-longest-increasing-subsequence",
+  "via": "reviewed"
+ },
+ "Longest Increasing Subsequence (DP-43)": {
+  "slug": "longest-increasing-subsequence",
+  "via": "sheet"
+ },
+ "Largest Divisible Subset (DP-44)": {
+  "slug": "largest-divisible-subset",
+  "via": "sheet"
+ },
+ "Longest String Chain (DP-45)": {
+  "slug": "longest-string-chain",
+  "via": "sheet"
+ },
+ "Longest Bitonic Subsequence (DP-46)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/longest-bitonic-subsequence",
+  "via": "reviewed"
+ },
+ "Number of Longest Increasing Subsequences (DP-47)": {
+  "slug": "number-of-longest-increasing-subsequence",
+  "via": "sheet"
+ },
+ "Matrix Chain Multiplication (DP-48)": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/matrix-chain-multiplication",
+  "via": "reviewed"
+ },
+ "Matrix Chain Multiplication | Bottom-Up (DP-49)": {
+  "slug": null,
+  "via": "none"
+ },
+ "Minimum Cost to Cut the Stick (DP-50)": {
+  "slug": "minimum-cost-to-cut-a-stick",
+  "via": "sheet"
+ },
+ "Burst Balloons (DP-51)": {
+  "slug": "burst-balloons",
+  "via": "sheet"
+ },
+ "Evaluate Boolean Expression to True (DP-52)": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Palindrome Partitioning - II (DP-53)": {
+  "slug": "palindrome-partitioning-ii",
+  "via": "sheet"
+ },
+ "Partition Array for Maximum Sum (DP-54)": {
+  "slug": "partition-array-for-maximum-sum",
+  "via": "exact",
+  "lcTitle": "Partition Array for Maximum Sum"
+ },
+ "Maximum Rectangle Area with all 1's (DP-55)": {
+  "slug": "maximal-rectangle",
+  "via": "reviewed"
+ },
+ "Count Square Submatrices with All Ones (DP-56)": {
+  "slug": "count-square-submatrices-with-all-ones",
+  "via": "exact",
+  "lcTitle": "Count Square Submatrices with All Ones"
+ },
+ "Implement TRIE | INSERT | SEARCH | STARTSWITH": {
+  "slug": "implement-trie-prefix-tree",
+  "via": "reviewed"
+ },
+ "Implement Trie - 2 (Prefix Tree)": {
+  "slug": "implement-trie-ii-prefix-tree",
+  "via": "reviewed"
+ },
+ "Longest String with All Prefixes": {
+  "slug": "longest-word-with-all-prefixes",
+  "via": "search",
+  "lcTitle": "Longest Word With All Prefixes",
+  "score": 0.67,
+  "paid": true
+ },
+ "Number of Distinct Substrings in a String": {
+  "slug": "number-of-distinct-substrings-in-a-string",
+  "via": "sheet"
+ },
+ "Bit PreRequisites for TRIE Problems": {
+  "slug": null,
+  "via": "none"
+ },
+ "Maximum XOR of two numbers in an array": {
+  "slug": "maximum-xor-of-two-numbers-in-an-array",
+  "via": "sheet"
+ },
+ "Maximum XOR With an Element From Array": {
+  "slug": "maximum-xor-with-an-element-from-array",
+  "via": "sheet"
+ },
+ "Min number of bracket reversals to make an expression balanced": {
+  "slug": null,
+  "via": "reviewed"
+ },
+ "Count and say": {
+  "slug": "count-and-say",
+  "via": "sheet"
+ },
+ "Hashing In Strings | Theory": {
+  "slug": null,
+  "via": "none"
+ },
+ "Rabin Karp": {
+  "slug": "repeated-string-match",
+  "via": "reviewed"
+ },
+ "Z-Function": {
+  "slug": null,
+  "link": "https://takeuforward.org/practice/dsa/z-function",
+  "via": "sheet"
+ },
+ "KMP algo / LPS(pi) array": {
+  "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+  "via": "reviewed"
+ },
+ "Shortest Palindrome": {
+  "slug": "shortest-palindrome",
+  "via": "sheet"
+ },
+ "Longest happy prefix": {
+  "slug": "longest-happy-prefix",
+  "via": "sheet"
+ },
+ "Count palindromic subsequence in given string": {
+  "slug": null,
+  "via": "reviewed"
+ }
+}

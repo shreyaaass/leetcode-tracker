@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LeetCode Tracker</title>
+  <meta name="theme-color" content="#0f1115" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2322c55e'/><path d='M9 17l5 5 9-11' stroke='white' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>LeetCode Tracker</h1>
+      <span id="dayBadge" class="pill"></span>
+    </div>
+    <div class="top-actions">
+      <span id="syncInfo" class="muted small"></span>
+      <button id="syncBtn" class="btn ghost" title="Run the LeetCode sync now">⟳ Sync</button>
+      <label class="btn ghost" title="Upload a new plan JSON">⤒ Plan<input id="planInput" type="file" accept=".json,application/json" hidden /></label>
+      <button id="settingsBtn" class="btn ghost" title="Settings">⚙</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="banner"></div>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Activity</h2>
+      </div>
+      <div id="heatmap" class="heatmap-wrap"></div>
+      <div id="heatFoot" class="heat-foot"></div>
+    </section>
+
+    <section class="grid2">
+      <div class="card">
+        <div class="card-head"><h2>Revise</h2><span class="muted small" id="reviseCount"></span></div>
+        <div id="reviseList" class="list"></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2 id="todayTitle">Up next</h2><span class="muted small" id="todayCount"></span></div>
+        <div id="todayList" class="list"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><h2>Subtopics</h2></div>
+      <div id="topics" class="topics"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Plan</h2>
+        <div class="filters">
+          <input id="fSearch" type="search" placeholder="Search…" />
+          <select id="fDiff"><option value="">All difficulty</option><option>Easy</option><option>Medium</option><option>Hard</option></select>
+          <select id="fStatus">
+            <option value="">All status</option>
+            <option value="todo">To do</option>
+            <option value="solved">Solved</option>
+            <option value="shaky">Shaky</option>
+            <option value="due">Due today</option>
+            <option value="overdue">Overdue</option>
+            <option value="mastered">Mastered</option>
+          </select>
+          <select id="fTopic"><option value="">All subtopics</option></select>
+        </div>
+      </div>
+      <div id="planTable"></div>
+    </section>
+
+    <section class="card" id="extrasCard" hidden>
+      <div class="card-head"><h2>Solved outside the plan</h2></div>
+      <div id="extras" class="list"></div>
+    </section>
+  </main>
+
+  <dialog id="settings">
+    <form method="dialog" class="dlg">
+      <h2>Settings</h2>
+      <p class="muted small">The dashboard reads and writes the data files in your GitHub repo. A fine-grained token with <b>Contents: read &amp; write</b> and <b>Actions: read &amp; write</b> on this one repo is enough. It's stored only in this browser.</p>
+      <label>GitHub owner <input name="owner" autocomplete="off" /></label>
+      <label>Repository <input name="repo" autocomplete="off" /></label>
+      <label>Branch <input name="branch" autocomplete="off" placeholder="main" /></label>
+      <label>Token <input name="token" type="password" autocomplete="off" placeholder="github_pat_…" /></label>
+      <div class="dlg-actions">
+        <button value="cancel" class="btn ghost">Cancel</button>
+        <button value="save" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="detail"><div class="dlg" id="detailBody"></div></dialog>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

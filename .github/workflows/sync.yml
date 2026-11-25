@@ -1,0 +1,42 @@
+name: Sync LeetCode
+
+on:
+  schedule:
+    - cron: '17 */3 * * *'   # every 3 hours
+  workflow_dispatch:          # "Run workflow" button / triggered from the dashboard
+  push:
+    branches: [main]
+    paths: ['data/plan.json'] # new plan uploaded -> fetch difficulty/topics right away
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Sync and commit
+        env:
+          LEETCODE_USERNAME: ${{ vars.LEETCODE_USERNAME }}
+        run: |
+          git config user.name  "leetcode-sync[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Retry loop: if the dashboard pushed an edit meanwhile, start over from the latest commit.
+          for i in 1 2 3; do
+            git fetch origin main && git reset --hard origin/main
+            node scripts/sync.mjs
+            git add data
+            if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+            git commit -m "sync: leetcode progress"
+            git push origin HEAD:main && exit 0
+            echo "Push rejected, retrying ($i)"; sleep 5
+          done
+          exit 1
