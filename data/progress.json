@@ -1,5 +1,21 @@
 {
   "version": 1,
   "lastSync": "2026-11-25T12:11:40.220Z",
-  "problems": {}
+  "problems": {
+    "m:selection-sort": {
+      "firstSolved": "2026-11-25",
+      "level": 0,
+      "nextRevision": "2026-12-09",
+      "lastActivity": "2026-11-25",
+      "history": [
+        {
+          "date": "2026-11-25",
+          "type": "solve",
+          "rating": "good",
+          "source": "manual"
+        }
+      ],
+      "notes": ""
+    }
+  }
 }
