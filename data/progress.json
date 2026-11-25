@@ -16,6 +16,21 @@
         }
       ],
       "notes": ""
+    },
+    "m:bubble-sort": {
+      "firstSolved": "2026-11-25",
+      "level": 0,
+      "nextRevision": "2026-12-09",
+      "lastActivity": "2026-11-25",
+      "history": [
+        {
+          "date": "2026-11-25",
+          "type": "solve",
+          "rating": "good",
+          "source": "manual"
+        }
+      ],
+      "notes": ""
     }
   }
 }
