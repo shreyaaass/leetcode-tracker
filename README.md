@@ -28,6 +28,21 @@ leetcode.com ──(Action, every 3h)──► data/progress.json ◄──(dash
 
 Change `intervals` in `config.json` to adjust these.
 
+## Notes (private)
+
+Click any problem to open it. The **Notes** section accepts:
+- **Text:** type, then *Add note* (or ⌘/Ctrl + Enter).
+- **Images:** 🖼 Image, paste a screenshot into the text box, or drag one onto the panel. Large images are shrunk before upload.
+- **Voice:** ● Record, then ■ Stop. It's saved straight away as m4a where supported (Safari, recent Chrome), otherwise webm.
+
+Notes never go to the public tracker repo. They're stored in the private notes repo:
+```
+index.json                 note counts per problem (the ✎ badges)
+notes/<problem>.json       the notes themselves
+media/<problem>/<id>.*     images and recordings
+```
+Deleting a note removes the file, but it stays in that private repo's git history.
+
 ## Plan format
 
 Drop a JSON file onto the dashboard (or click **⤒ Plan**). Keys are day numbers. All of these forms work, and you can mix them:
@@ -63,8 +78,9 @@ Difficulty and subtopic are optional. When they're missing, the sync fills them 
 3. **Enable Pages:** repo → Settings → Pages → *Deploy from a branch* → `main` / root.
    The dashboard will be at `https://<you>.github.io/leetcode-tracker/`.
 4. **Allow the Action to push:** repo → Settings → Actions → General → Workflow permissions → *Read and write*.
-5. **Create a token for the dashboard buttons:** GitHub → Settings → Developer settings → Fine-grained tokens. Limit it to this repo only, with **Contents: Read and write** and **Actions: Read and write**. Paste it into the dashboard's ⚙ Settings. It's stored only in that browser.
-6. **Add it to your Dock:** open the dashboard in Safari → File → *Add to Dock*. On iPhone: Share → *Add to Home Screen*.
+5. **Create a private notes repo** called `leetcode-notes` (any name works; set it in ⚙ Settings).
+6. **Create a token for the dashboard:** GitHub → Settings → Developer settings → Fine-grained tokens. Limit it to **both repos** (`leetcode-tracker` and `leetcode-notes`), with **Contents: Read and write** and **Actions: Read and write**. Paste it into the dashboard's ⚙ Settings. It's stored only in that browser.
+7. **Add it to your Dock:** open the dashboard in Safari → File → *Add to Dock*. On iPhone: Share → *Add to Home Screen*.
 
 Then click **⟳ Sync** once to run the first sync.
 
@@ -81,6 +97,7 @@ Then click **⟳ Sync** once to run the first sync.
 | Path | What |
 |---|---|
 | `index.html`, `styles.css`, `app.js` | Dashboard |
+| `notes.js` | Private notes: storage in the notes repo, image prep, voice recording |
 | `lib/core.js` | Shared logic: plan parsing, spaced repetition, stats |
 | `scripts/sync.mjs` | LeetCode → progress sync |
 | `.github/workflows/sync.yml` | Runs the sync every 3h, on demand, and when the plan changes |

@@ -81,10 +81,11 @@
   <dialog id="settings">
     <form method="dialog" class="dlg">
       <h2>Settings</h2>
-      <p class="muted small">The dashboard reads and writes the data files in your GitHub repo. A fine-grained token with <b>Contents: read &amp; write</b> and <b>Actions: read &amp; write</b> on this one repo is enough. It's stored only in this browser.</p>
+      <p class="muted small">The dashboard reads and writes the data files in your GitHub repo, and keeps notes in a separate <b>private</b> repo. Use a fine-grained token with access to <b>both repos</b>, with <b>Contents: read &amp; write</b> and <b>Actions: read &amp; write</b>. It's stored only in this browser.</p>
       <label>GitHub owner <input name="owner" autocomplete="off" /></label>
       <label>Repository <input name="repo" autocomplete="off" /></label>
       <label>Branch <input name="branch" autocomplete="off" placeholder="main" /></label>
+      <label>Private notes repo <input name="notesRepo" autocomplete="off" placeholder="leetcode-notes" /></label>
       <label>Token <input name="token" type="password" autocomplete="off" placeholder="github_pat_…" /></label>
       <div class="dlg-actions">
         <button value="cancel" class="btn ghost">Cancel</button>

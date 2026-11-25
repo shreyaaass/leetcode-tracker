@@ -2,6 +2,7 @@ import {
   parsePlan, resolveProblem, applyEvent, replay, statusOf, activityByDate, streaks,
   currentDay, dateInTz, addDays, daysBetween, DEFAULT_INTERVALS, DIFFICULTIES,
 } from './lib/core.js';
+import { createNotesStore, prepareImage, startRecording, pickAudioMime } from './notes.js';
 
 // ---------------------------------------------------------------- state
 const S = {
@@ -40,6 +41,7 @@ function loadSettings() {
 }
 let settings = loadSettings();
 const canWrite = () => !!(settings.token && settings.owner && settings.repo);
+const notes = createNotesStore(() => settings);
 
 const b64decode = (s) => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, '')), (c) => c.charCodeAt(0)));
 const b64encode = (s) => { let bin = ''; new TextEncoder().encode(s).forEach((b) => (bin += String.fromCharCode(b))); return btoa(bin); };
@@ -125,12 +127,6 @@ function undo(slug) {
   }, `undo: ${slug}`);
 }
 
-function saveNotes(slug, notes) {
-  return mutateProgress((p) => {
-    if (p.problems[slug]) p.problems[slug].notes = notes;
-  }, `notes: ${slug}`);
-}
-
 async function triggerSync() {
   if (!canWrite()) return toast('Add a GitHub token in Settings ⚙ to trigger syncs');
   try {
@@ -178,6 +174,7 @@ function derive() {
 }
 
 // ---------------------------------------------------------------- render
+function noteBadge(slug) { const n = notes.counts()[slug]; return n ? `<span class="note-count" title="${n} note${n === 1 ? '' : 's'}">✎ ${n}</span>` : ''; }
 function diffBadge(d) { return `<span class="diff ${d || 'none'}">${d || '?'}</span>`; }
 const STATUS_LABEL = { todo: 'To do', solved: 'Solved', shaky: 'Shaky', due: 'Due today', overdue: 'Overdue', mastered: 'Mastered' };
 function statusBadge(s) { return `<span class="status ${s}">${STATUS_LABEL[s]}</span>`; }
@@ -259,7 +256,7 @@ function renderHeatmap() {
 function row(p, extra = '') {
   return `<div class="row">
     ${diffBadge(p.difficulty)}
-    <div class="title"><a href="${p.url}" target="_blank" rel="noopener">${esc(p.title)}</a>${p.notFound ? '<span class="tag">manual</span>' : ''} <span class="meta">${esc(p.subtopic)}</span></div>
+    <div class="title"><a href="${p.url}" target="_blank" rel="noopener">${esc(p.title)}</a>${p.notFound ? '<span class="tag">manual</span>' : ''}${noteBadge(p.slug)} <span class="meta">${esc(p.subtopic)}</span></div>
     ${extra}
   </div>`;
 }
@@ -340,7 +337,7 @@ function renderPlan({ days }) {
         <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Subtopic</th><th>Status</th><th>Solved</th><th>Next revision</th></tr></thead>
         <tbody>${items.map((p) => `<tr class="clickable" data-slug="${esc(p.slug)}">
           <td class="muted">${p.id || ''}</td>
-          <td class="t-title"><a href="${p.url}" target="_blank" rel="noopener">${esc(p.title)}</a>${p.notFound ? '<span class="tag" title="Not on LeetCode — mark it by hand. If it is on LeetCode under another name, add a \'slug\' or \'url\' in plan.json.">manual</span>' : ''}</td>
+          <td class="t-title"><a href="${p.url}" target="_blank" rel="noopener">${esc(p.title)}</a>${noteBadge(p.slug)}${p.notFound ? '<span class="tag" title="Not on LeetCode — mark it by hand. If it is on LeetCode under another name, add a \'slug\' or \'url\' in plan.json.">manual</span>' : ''}</td>
           <td>${diffBadge(p.difficulty)}</td>
           <td class="muted">${esc(p.subtopic)}</td>
           <td>${statusBadge(p.status)}</td>
@@ -387,24 +384,115 @@ function openDetail(slug) {
   $('#detailBody').innerHTML = `
     <div style="display:flex;gap:8px;align-items:center">${diffBadge(p.difficulty)}${statusBadge(p.status)}</div>
     <h2 style="font-size:17px"><a href="${p.url}" target="_blank" rel="noopener">${p.id ? p.id + '. ' : ''}${esc(p.title)} ↗</a></h2>
-    <div class="muted small">${esc(p.subtopic)}${p.day ? ` · Day ${p.day}` : ''}</div>
+    <div class="muted small">${esc(p.subtopic)}${p.day ? ` · Day ${p.day}` : ''}${p.lcTitle && p.lcTitle !== p.title ? ` · LeetCode: ${esc(p.lcTitle)}` : ''}</div>
     ${e ? `<div class="small">First solved <b>${fmtDate(e.firstSolved)}</b> · next revision <b>${fmtDate(e.nextRevision)}</b> (${relDays(e.nextRevision)}) · stage ${e.level + 1}/${S.intervals.length}</div>
-      <div class="hist">${[...e.history].reverse().map((h) => `<div><span>${fmtDate(h.date)} · ${h.type}${h.rating === 'struggled' ? ' <span class="c-hard">(struggled)</span>' : ''}</span><span class="muted small">${h.source}</span></div>`).join('')}</div>
-      <label>Notes<textarea id="notes" placeholder="Approach, pitfalls, complexity…">${esc(e.notes || '')}</textarea></label>` : '<div class="muted small">Not solved yet.</div>'}
+      <div class="hist">${[...e.history].reverse().map((h) => `<div><span>${fmtDate(h.date)} · ${h.type}${h.rating === 'struggled' ? ' <span class="c-hard">(struggled)</span>' : ''}</span><span class="muted small">${h.source}</span></div>`).join('')}</div>`
+      : '<div class="muted small">Not solved yet.</div>'}
     <div class="dlg-actions">
-      ${e ? `<button class="btn ghost" data-d="undo">Undo last</button><button class="btn ghost" data-d="notes">Save notes</button>` : ''}
+      ${e ? `<button class="btn ghost" data-d="undo">Undo last</button>` : ''}
       <button class="btn bad" data-d="struggled">Struggled</button>
       <button class="btn primary" data-d="good">✓ ${e ? 'Revised' : 'Solved'}</button>
-      <button class="btn ghost" data-d="close">Close</button>
-    </div>`;
+    </div>
+    <section class="notes-sec">
+      <div class="notes-head"><b>Notes</b><span class="muted small" id="notesState"></span></div>
+      ${notes.enabled() ? `
+      <div class="composer">
+        <textarea id="noteText" placeholder="Approach, pitfalls, complexity… (paste a screenshot here too)"></textarea>
+        <div class="composer-bar">
+          <label class="btn sm ghost" title="Add an image">🖼 Image<input type="file" accept="image/*" id="noteImg" hidden /></label>
+          ${pickAudioMime() !== null && navigator.mediaDevices?.getUserMedia ? `<button class="btn sm ghost" id="recBtn" title="Record a voice note">● Record</button>` : ''}
+          <span style="flex:1"></span>
+          <button class="btn sm primary" id="noteAdd">Add note</button>
+        </div>
+      </div>
+      <div id="notesList" class="notes-list"><div class="muted small">Loading…</div></div>`
+      : `<div class="muted small">Add a GitHub token in Settings ⚙ to keep private notes (text, images, voice). They're stored in your private <code>${esc(settings.notesRepo || 'leetcode-notes')}</code> repo, not in the public tracker.</div>`}
+    </section>
+    <div class="dlg-actions"><button class="btn ghost" data-d="close">Close</button></div>`;
+
+  let recorder = null, timer = null;
+  const stopRecorder = () => { clearInterval(timer); timer = null; const r = recorder; recorder = null; return r?.stop(); };
+  const busy = (msg) => { const el = $('#notesState'); if (el) el.textContent = msg || ''; };
+
+  const renderNotes = (list) => {
+    const box = $('#notesList');
+    if (!box) return;
+    box.innerHTML = list.length ? [...list].reverse().map((n) => `
+      <div class="note" data-id="${n.id}">
+        <div class="note-meta"><span>${new Date(n.created).toLocaleString(undefined, { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' })}${n.type !== 'text' ? ` · ${n.type}` : ''}</span>
+          <button class="btn sm ghost note-del" data-del="${n.id}" title="Delete note">✕</button></div>
+        ${n.type === 'image' ? `<img class="note-img" data-path="${esc(n.path)}" alt="Note image" />` : ''}
+        ${n.type === 'audio' ? `<audio controls preload="metadata" data-path="${esc(n.path)}"></audio>` : ''}
+        ${n.text ? `<div class="note-text">${esc(n.text)}</div>` : ''}
+      </div>`).join('') : `<div class="muted small">No notes yet.</div>`;
+    for (const el of box.querySelectorAll('[data-path]')) {
+      const n = list.find((x) => x.path === el.dataset.path);
+      notes.mediaUrl(n).then((url) => { el.src = url; }).catch(() => { el.replaceWith(Object.assign(document.createElement('div'), { className: 'muted small', textContent: 'Couldn’t load this file.' })); });
+    }
+  };
+
+  const save = async (payload, label) => {
+    busy(`Saving ${label}…`);
+    try { renderNotes(await notes.add(slug, payload)); busy(''); toast('Note saved ✓'); render(); }
+    catch (err) { busy(''); toast(`Couldn't save note (${err.message})`); }
+  };
+
+  if (notes.enabled()) {
+    notes.list(slug).then(renderNotes).catch((err) => { $('#notesList').innerHTML = `<div class="muted small">Couldn't load notes (${esc(err.message)}). Check the token has access to the notes repo.</div>`; });
+
+    const ta = $('#noteText');
+    const addText = () => { const t = ta.value.trim(); if (!t) return; ta.value = ''; save({ text: t }, 'note'); };
+    $('#noteAdd').onclick = addText;
+    ta.onkeydown = (ev) => { if (ev.key === 'Enter' && (ev.metaKey || ev.ctrlKey)) { ev.preventDefault(); addText(); } };
+    ta.onpaste = async (ev) => {
+      const file = [...(ev.clipboardData?.files || [])].find((f) => f.type.startsWith('image/'));
+      if (!file) return;
+      ev.preventDefault();
+      save({ blob: await prepareImage(file) }, 'image');
+    };
+    $('#noteImg').onchange = async (ev) => {
+      const file = ev.target.files[0]; ev.target.value = '';
+      if (file) save({ blob: await prepareImage(file) }, 'image');
+    };
+    const recBtn = $('#recBtn');
+    if (recBtn) recBtn.onclick = async () => {
+      if (!recorder) {
+        try { recorder = await startRecording(); } catch (err) { return toast(`Microphone unavailable (${err.message})`); }
+        recBtn.classList.add('recording');
+        const tick = () => { const s = Math.floor(recorder.elapsed() / 1000); recBtn.textContent = `■ Stop ${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
+        tick(); timer = setInterval(tick, 500);
+      } else {
+        recBtn.classList.remove('recording'); recBtn.textContent = '● Record';
+        const blob = await stopRecorder();
+        if (blob.size) save({ blob }, 'recording');
+      }
+    };
+  }
+
   $('#detailBody').onclick = async (ev) => {
+    const del = ev.target.closest('[data-del]');
+    if (del) {
+      if (!confirm('Delete this note? This can’t be undone.')) return;
+      busy('Deleting…');
+      try { renderNotes(await notes.remove(slug, del.dataset.del)); render(); } catch (err) { toast(`Delete failed (${err.message})`); }
+      busy('');
+      return;
+    }
+    const img = ev.target.closest('.note-img');
+    if (img?.src) { window.open(img.src, '_blank'); return; }
     const a = ev.target.closest('[data-d]')?.dataset.d;
     if (!a) return;
-    if (a === 'notes') { await saveNotes(slug, $('#notes').value); return; }
     $('#detail').close();
     if (a === 'undo') undo(slug);
     if (a === 'good' || a === 'struggled') record(slug, a);
   };
+  // Drop an image onto the dialog to attach it (and keep the page-level plan drop from firing).
+  $('#detail').ondrop = async (ev) => {
+    ev.preventDefault(); ev.stopPropagation();
+    const file = [...ev.dataTransfer.files].find((f) => f.type.startsWith('image/'));
+    if (file && notes.enabled()) save({ blob: await prepareImage(file) }, 'image');
+  };
+  $('#detail').onclose = () => { if (recorder) stopRecorder(); };
   $('#detail').showModal();
 }
 
@@ -424,13 +512,14 @@ $('#syncBtn').onclick = triggerSync;
 $('#planInput').onchange = (e) => { if (e.target.files[0]) uploadPlan(e.target.files[0]); e.target.value = ''; };
 $('#settingsBtn').onclick = () => {
   const f = $('#settings form');
-  for (const k of ['owner', 'repo', 'branch', 'token']) f.elements[k].value = settings[k] || '';
+  for (const k of ['owner', 'repo', 'branch', 'notesRepo', 'token']) f.elements[k].value = settings[k] || '';
   $('#settings').showModal();
 };
 $('#settings').addEventListener('close', () => {
   if ($('#settings').returnValue !== 'save') return;
   const f = $('#settings form');
-  settings = Object.fromEntries(['owner', 'repo', 'branch', 'token'].map((k) => [k, f.elements[k].value.trim()]));
+  settings = Object.fromEntries(['owner', 'repo', 'branch', 'notesRepo', 'token'].map((k) => [k, f.elements[k].value.trim()]));
+  settings.notesRepo ||= 'leetcode-notes';
   settings.branch ||= 'main';
   try { localStorage.setItem('lc-settings', JSON.stringify(settings)); } catch {}
   load();
@@ -451,5 +540,6 @@ async function load() {
   Object.assign(S, { config, planRaw, catalog, links, plan: parsePlan(planRaw, catalog, links), progress, meta, intervals: config.intervals || DEFAULT_INTERVALS });
   S.progress.problems ||= {};
   render();
+  notes.loadIndex().then(render);
 }
 load();
