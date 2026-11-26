@@ -31,6 +31,21 @@
         }
       ],
       "notes": ""
+    },
+    "m:insertion-sort": {
+      "firstSolved": "2026-11-26",
+      "level": 0,
+      "nextRevision": "2026-12-10",
+      "lastActivity": "2026-11-26",
+      "history": [
+        {
+          "date": "2026-11-26",
+          "type": "solve",
+          "rating": "good",
+          "source": "manual"
+        }
+      ],
+      "notes": ""
     }
   }
 }
